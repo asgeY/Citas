@@ -1,0 +1,44 @@
+//
+//  TabBar.swift
+//  Citas
+//
+//  Created by Asge Yohannes on 7/12/19.
+//  Copyright © 2019 Asge Yohannes. All rights reserved.
+//
+
+import SwiftUI
+
+struct TabBar : View {
+    var body: some View {
+        TabbedView {
+            Home()
+                .tabItem({
+                    Image(systemName: "house")
+                    Text("Home")
+                })
+                .tag(1)
+            TopTabs()
+                .tabItem({
+                    Image(systemName:"magnifyingglass.circle")
+                    Text("Search")
+                })
+                .tag(2)
+            MainImageView()
+                .tabItem({
+                    Image(systemName:"person.crop.circle.fill")
+                    Text("LogedIn")
+                })
+                .tag(3)
+        }
+        .edgesIgnoringSafeArea(.top)
+    }
+    }
+
+
+#if DEBUG
+struct TabBar_Previews : PreviewProvider {
+    static var previews: some View {
+        TabBar()
+    }
+}
+#endif

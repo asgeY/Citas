@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MainImageView.swift
 //  Citas
 //
 //  Created by Asge Yohannes on 7/12/19.
