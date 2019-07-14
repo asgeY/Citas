@@ -30,6 +30,13 @@ struct TabBar : View {
                     
                 })
                 .tag(3)
+            Settings()
+                .tabItem({
+                    Image(systemName:"gear")
+                    Text("Settings")
+                    
+                })
+                .tag(4)
         }
         .edgesIgnoringSafeArea(.top)
     }
