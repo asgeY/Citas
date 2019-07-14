@@ -24,7 +24,7 @@ struct TabView : View {
                 .padding()
                 Spacer()
                 
-                Image(systemName: "circle.grid.hex")
+                Image(systemName: "gear")
                     .resizable()
                     .renderingMode(.original)
                     .frame(width: 30, height: 30)

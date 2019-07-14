@@ -13,13 +13,15 @@ struct MainImageView : View {
     var body: some View {
         Image(image)
             .resizable()
-            .aspectRatio(contentMode: .fit)
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 320, height: 450)
+            .clipped()
             .cornerRadius(20)
-            .frame(width: 350, height: 360)
-            
             .shadow(color: .black, radius: 5, x: 5, y: 5)
+            .padding(.top, 90)
         
     }
+    
 }
 
 #if DEBUG

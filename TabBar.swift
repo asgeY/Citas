@@ -17,7 +17,7 @@ struct TabBar : View {
                     Text("Home")
                 })
                 .tag(1)
-            TopTabs()
+            SearchViewModel()
                 .tabItem({
                     Image(systemName:"magnifyingglass.circle")
                     Text("Search")
@@ -25,8 +25,9 @@ struct TabBar : View {
                 .tag(2)
             MainImageView()
                 .tabItem({
-                    Image(systemName:"person.crop.circle.fill")
-                    Text("LogedIn")
+                    Image(systemName:"heart.fill")
+                    Text("Favorite")
+                    
                 })
                 .tag(3)
         }
